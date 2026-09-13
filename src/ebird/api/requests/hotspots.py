@@ -2,8 +2,8 @@
 
 from urllib.error import HTTPError
 
-from ebird.api.utils import call
-from ebird.api.validation import (
+from ebird.api.requests.utils import call
+from ebird.api.requests.validation import (
     clean_back,
     clean_dist,
     clean_lat,
