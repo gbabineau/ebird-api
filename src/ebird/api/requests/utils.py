@@ -155,7 +155,7 @@ def save_json(filename, data, indent=None):
         json.dump(data, outfile, indent=indent)
 
 
-def call(url, params, headers, max_retries=3, backoff_factor=1.0):
+def call(url, params, headers, max_retries=5, backoff_factor=10.0):
     """Call the eBird API.
 
     :param url: the URL for the API call.
